@@ -39,18 +39,24 @@ openclaw-diary/                          # GitHub 仓库
 - **目录**: `openclaw-diary-setup/`
 - **状态**: 已发布
 - **功能**: 安装向导，自动安装依赖
+- **ClawHub**: https://clawhub.ai/skills/openclaw-diary-setup
 
 ### 2. openclaw-diary-core ✅
 - **版本**: v1.0.1
 - **目录**: `openclaw-diary-core/`
 - **状态**: 已发布
 - **功能**: 日记记录系统
+- **ClawHub**: https://clawhub.ai/skills/openclaw-diary-core
 
 ### 3. openclaw-diary-insights ⏳
 - **版本**: v1.0.0
 - **目录**: `openclaw-diary-insights/`
 - **状态**: 待发布（速率限制）
 - **功能**: 洞察提取
+
+**旧 skills 已隐藏**:
+- ~~smorzandos-diary-onboarding~~ → openclaw-diary-setup
+- ~~smorzandos-diary~~ → openclaw-diary-core
 
 **待发布命令**（约 1 小时后）：
 ```bash
