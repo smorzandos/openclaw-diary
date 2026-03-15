@@ -17,10 +17,16 @@
 最简单的方式！在 OpenClaw 中说：
 
 ```
-Help me install openclaw-diary
+Help me install openclaw-diary-setup from ClawHub
 ```
 
-OpenClaw 会自动下载并安装所有 3 个 skills。
+setup skill 会自动安装其他依赖的 skills。
+
+或者使用命令行：
+```bash
+npm install -g clawhub
+clawhub install openclaw-diary-setup
+```
 
 ### 方式 2：手动安装
 
@@ -30,12 +36,12 @@ OpenClaw 会自动下载并安装所有 3 个 skills。
 
 ```bash
 # 克隆仓库
-git clone https://github.com/openclaw-community/openclaw-diary.git
+git clone https://github.com/smorzandos/openclaw-diary.git
 cd openclaw-diary
 ```
 
 或者下载 ZIP 文件：
-- 访问 https://github.com/openclaw-community/openclaw-diary
+- 访问 https://github.com/smorzandos/openclaw-diary
 - 点击 "Code" → "Download ZIP"
 - 解压到任意目录
 
@@ -46,13 +52,13 @@ cd openclaw-diary
 mkdir -p ~/.openclaw/skills
 
 # 复制 3 个 skills
-cp -r diary ~/.openclaw/skills/
-cp -r onboarding ~/.openclaw/skills/
-cp -r note-extractor ~/.openclaw/skills/
+cp -r openclaw-diary-setup ~/.openclaw/skills/
+cp -r openclaw-diary-core ~/.openclaw/skills/
+cp -r openclaw-diary-insights ~/.openclaw/skills/
 
 # 验证安装
 ls ~/.openclaw/skills/
-# 应该看到：diary  note-extractor  onboarding
+# 应该看到：openclaw-diary-core  openclaw-diary-insights  openclaw-diary-setup
 ```
 
 #### 步骤 3：重启 OpenClaw

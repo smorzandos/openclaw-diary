@@ -58,9 +58,9 @@ git clone https://github.com/smorzandos/openclaw-diary.git
 
 # 2. 复制到 OpenClaw skills 目录
 mkdir -p ~/.openclaw/skills
-cp -r openclaw-diary/diary ~/.openclaw/skills/
-cp -r openclaw-diary/onboarding ~/.openclaw/skills/
-cp -r openclaw-diary/note-extractor ~/.openclaw/skills/
+cp -r openclaw-diary/openclaw-diary-setup ~/.openclaw/skills/
+cp -r openclaw-diary/openclaw-diary-core ~/.openclaw/skills/
+cp -r openclaw-diary/openclaw-diary-insights ~/.openclaw/skills/
 
 # 3. 重启 OpenClaw
 # OpenClaw 会自动识别新的 skills
