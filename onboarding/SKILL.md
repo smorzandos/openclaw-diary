@@ -62,8 +62,8 @@ ls -la ~/.openclaw/skills/diary 2>&1 && ls -la ~/.openclaw/skills/note-extractor
 发送提示：
 ```
 OpenClaw Diary 需要安装以下 skills：
-- smorzandos-diary（日记记录）
-- smorzandos-diary-insights（洞察提取）
+- openclaw-diary-core（日记记录）
+- openclaw-diary-insights（洞察提取）
 
 正在为你安装...
 ```
@@ -77,8 +77,8 @@ if ! command -v clawhub &> /dev/null; then
 fi
 
 # 安装依赖的 skills
-clawhub install smorzandos-diary
-clawhub install smorzandos-diary-insights
+clawhub install openclaw-diary-core
+clawhub install openclaw-diary-insights
 ```
 
 安装完成后发送：
