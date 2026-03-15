@@ -1,0 +1,26 @@
+# Development workspace directories
+*-workspace/
+
+# Backup files
+*.backup
+
+# System files
+.DS_Store
+
+# Node modules (if using npm)
+node_modules/
+
+# Environment files
+.env
+.env.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
