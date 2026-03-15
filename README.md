@@ -4,6 +4,11 @@
 
 OpenClaw Diary 是一套完整的 AI 日记系统，帮助你轻松记录日常想法、自动生成洞察分析。支持本地存储和飞书同步，保护你的隐私。
 
+**包含三个 ClawHub Skills**:
+- `openclaw-diary-setup` - 安装向导
+- `openclaw-diary-core` - 日记记录
+- `openclaw-diary-insights` - 洞察提取
+
 ## ✨ 功能特点
 
 ### 📝 智能日记记录
