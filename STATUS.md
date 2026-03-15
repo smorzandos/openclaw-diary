@@ -48,25 +48,18 @@ openclaw-diary/                          # GitHub 仓库
 - **功能**: 日记记录系统
 - **ClawHub**: https://clawhub.ai/skills/openclaw-diary-core
 
-### 3. openclaw-diary-insights ⏳
+### 3. openclaw-diary-insights ✅
 - **版本**: v1.0.0
 - **目录**: `openclaw-diary-insights/`
-- **状态**: 待发布（速率限制）
+- **状态**: 已发布
 - **功能**: 洞察提取
+- **ClawHub**: https://clawhub.ai/skills/openclaw-diary-insights
 
 **旧 skills 已隐藏**:
 - ~~smorzandos-diary-onboarding~~ → openclaw-diary-setup
 - ~~smorzandos-diary~~ → openclaw-diary-core
 
-**待发布命令**（约 1 小时后）：
-```bash
-clawhub publish ./openclaw-diary-insights \
-  --slug openclaw-diary-insights \
-  --name "OpenClaw Diary Insights" \
-  --version "1.0.0" \
-  --changelog "自动提取思维卡片、情绪轨迹、成长维度分析和知识图谱" \
-  --tags "insights,analysis,diary,knowledge-management"
-```
+**全部发布完成！** 🎉
 
 ---
 
