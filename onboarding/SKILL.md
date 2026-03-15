@@ -48,7 +48,47 @@ metadata:
 
 ## 前置检查
 
-**检查配置文件是否已存在**：
+### 步骤 1：检查依赖的 skills 是否已安装
+
+**检查 diary 和 note-extractor skills**：
+
+使用 Bash 工具检查：
+```bash
+ls -la ~/.openclaw/skills/diary 2>&1 && ls -la ~/.openclaw/skills/note-extractor 2>&1
+```
+
+**如果任一 skill 不存在**：
+
+发送提示：
+```
+OpenClaw Diary 需要安装以下 skills：
+- smorzandos-diary（日记记录）
+- smorzandos-diary-insights（洞察提取）
+
+正在为你安装...
+```
+
+然后使用 Bash 工具安装：
+```bash
+# 检查是否安装了 clawhub CLI
+if ! command -v clawhub &> /dev/null; then
+    echo "正在安装 ClawHub CLI..."
+    npm install -g clawhub
+fi
+
+# 安装依赖的 skills
+clawhub install smorzandos-diary
+clawhub install smorzandos-diary-insights
+```
+
+安装完成后发送：
+```
+✓ 依赖 skills 安装完成！
+
+现在开始配置你的日记系统。
+```
+
+### 步骤 2：检查配置文件是否已存在
 
 1. 展开 `~` 为完整路径：使用 `echo $HOME` 获取主目录
 2. 检查文件：`~/.openclaw/workspace/diary/config/diary-config.json`
