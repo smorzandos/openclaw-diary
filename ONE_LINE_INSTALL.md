@@ -5,10 +5,10 @@
 ### 在 OpenClaw 中说：
 
 ```
-Help me install smorzandos-diary-onboarding from ClawHub
+Help me install openclaw-diary-setup from ClawHub
 ```
 
-**就这一句！** onboarding skill 会自动安装其他两个依赖的 skills。
+**就这一句！** setup skill 会自动安装其他两个依赖的 skills。
 
 ---
 
@@ -16,12 +16,12 @@ Help me install smorzandos-diary-onboarding from ClawHub
 
 ```bash
 npm install -g clawhub
-clawhub install smorzandos-diary-onboarding
+clawhub install openclaw-diary-setup
 ```
 
-onboarding 会在首次运行时自动安装：
-- `smorzandos-diary`（日记记录）
-- `smorzandos-diary-insights`（洞察提取）
+setup 会在首次运行时自动安装：
+- `openclaw-diary-core`（日记记录）
+- `openclaw-diary-insights`（洞察提取）
 
 ---
 
@@ -43,14 +43,14 @@ setup my journal
 
 ## 工作原理
 
-1. **你只需安装**：`smorzandos-diary-onboarding`
-2. **onboarding 会自动**：
-   - 检查是否安装了 `smorzandos-diary` 和 `smorzandos-diary-insights`
+1. **你只需安装**：`openclaw-diary-setup`
+2. **setup 会自动**：
+   - 检查是否安装了 `openclaw-diary-core` 和 `openclaw-diary-insights`
    - 如果没有，自动安装它们
    - 引导你完成配置
 3. **配置完成后**：三个 skills 协同工作
-   - onboarding：初始化设置
-   - diary：日记记录
+   - setup：初始化设置
+   - core：日记记录
    - insights：洞察提取
 
 ---
@@ -58,10 +58,10 @@ setup my journal
 ## 三个 Skills 的关系
 
 ```
-smorzandos-diary-onboarding (入口)
+openclaw-diary-setup (入口)
     ↓ 自动安装
-    ├── smorzandos-diary (日记记录)
-    └── smorzandos-diary-insights (洞察提取)
+    ├── openclaw-diary-core (日记记录)
+    └── openclaw-diary-insights (洞察提取)
 ```
 
 **用户体验**：
